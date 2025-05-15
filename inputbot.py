@@ -8,6 +8,8 @@ from discord import app_commands
 from discord.ext import commands
 import time
 load_dotenv()
+f = open("/Users/bigricce1227/Documents/Coding_Projects/Tokens_and_Keys/FoldBot_Token", "r")
+os.environ['DISCORD_TOKEN'] = f.read()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 #print(TOKEN)
