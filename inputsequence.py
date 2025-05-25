@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 sequence = os.getenv('SEQUENCE')
 f = open("input.fasta", "w")
-f.write(">protein_monomer ")
+f.write(">protein_monomer\n")
 f.write(sequence)
 f.close()
 
